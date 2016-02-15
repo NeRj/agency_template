@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link style="text/css" rel="stylesheet"  href="/home/notepad/Desktop/data&utils/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+		<script  src="/home/notepad/Desktop/data&utils/jquery.min.js" ></script>
+		<script  src="/home/notepad/Desktop/data&utils/bootstrap-3.3.5-dist/js/bootstrap.min.js" ></script>
+		<script src="./bxSlider/jquery.bxslider.min.js"></script>
+		<link href="./bxSlider/jquery.bxslider.css" rel="stylesheet" />
+		<link href="http://vjs.zencdn.net/5.6.0/video-js.css" rel="stylesheet">
+		<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+		<script src="http://vjs.zencdn.net/5.6.0/video.js"></script>
+
+		<style type="text/css">
+			body {
+			    background-color: #2B1031;
+			    width: 100%;
+			    height: 100%;
+			}
+
+			nav, footer, header {
+				display: block;
+			}
+
+			.hovereffect {
+				width: 100%;
+				height: 100%;
+				float: left;
+				overflow: hidden;
+				position: relative;
+				text-align: center;
+				cursor: default;
+			}
+
+			.main-theme {
+				min-height: 899px;
+				background-repeat: no-repeat;
+				background-position: center top;
+			}
+
+			.hovereffect img {
+			  display: block;
+			  position: relative;
+			  -webkit-transition: all 0.35s;
+			  transition: all 0.35s;
+			}
+
+			.hovereffect:hover img {
+			  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.4" /><feFuncG type="linear" slope="1.4" /><feFuncB type="linear" slope="1.4" /></feComponentTransfer></filter></svg>#filter');
+			  filter: brightness(1.4);
+			  -webkit-filter: brightness(1.4);
+			}
+
+			.img-position {
+				padding-top: 50%;
+			}
+			h1 {
+				color: white;
+				font-size: 45pt;
+				font-family: serif;
+			}
+
+			h3 {
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				font-size: 30pt;
+				font-weight: bold;
+			}
+
+			h4 {
+				font-family: cursive, serif;
+				font-size: 16pt;
+				font-weight: normal;
+				opacity: 0.5;
+			}
+
+			h5 {
+				font-family: cursive, serif;
+				font-size: 14pt;
+				font-weight: normal;
+				opacity: 0.5;
+			}
+			.min-height {
+				min-height: 650px;
+			}
+
+			.red-line {
+				background-color: #E8432F;
+				height: 5px;
+			    border-radius: 25px;
+			    width: 13%;
+
+			}
+			.white-line {
+				background-color: white;
+				height: 5px;
+			    border-radius: 25px;
+			    width: 13%;
+
+			}
+
+			.glyphicon-color {
+				color: #E8432F;
+			}
+			.glyphicon-size {
+				font-size: 2em;
+			}
+			.text-top {
+				vertical-align: text-top;
+				font-family: "Comic Sans MS", cursive, sans-serif;
+			}
+
+			.slider-arrows {
+				padding-top: 10%;
+				font-size: 5em;
+				opacity: 0.5;
+			}
+
+
+		</style>
+		<title></title>
+	</head>
+	<body>
+		<div class="container-fluid main-theme" style="background-image: url(./minimaze-template.jpg);">
+			<div class="row">
+				<div class="col-md-3 col-xs-6"></div>
+				<div class="col-md-3 col-xs-6"></div>
+				<div class="col-md-3 col-xs-6"></div>
+				<div class="col-md-3 col-xs-6">
+					<div class="hovereffect">
+						<img id="img" class="img-responsive img-position" src="./humburger-icon.jpg" />
+					</div>
+				</div>
+			</div>
+			<div class="row min-height">
+				<div class="col-md-3 col-xs-12"></div>
+				<div class="col-md-3 col-xs-12">
+					<div class="overlay" hidden="true">
+						<h1>We Make websites and apps that you'll love to have.</h1>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-12"></div>
+				<div class="col-md-3 col-xs-12"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2 col-xs-12 text-right"></div>
+				<div class="col-md-2 col-xs-12">
+					<h3>
+						Welcome!
+					</h3>
+					<div class="red-line"></div>
+				</div>
+				<div class="col-md-2 col-xs-12"></div>
+				<div class="col-md-2 col-xs-12"></div>
+				<div class="col-md-2 col-xs-12"></div>
+				<div class="col-md-2 col-xs-12"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2 col-xs-12"></div>
+				<div class="col-md-2 col-xs-12"></div>
+				<div class="col-md-2 col-xs-12">
+					<span class="glyphicon glyphicon-comment glyphicon-size" />
+					<span class="text-top">Colabarate</span>
+				</div>
+				<div class="col-md-2 col-xs-12">
+					<span class="glyphicon glyphicon-heart glyphicon-size" />
+					<span class="text-top">Creative</span>
+				</div>
+				<div class="col-md-2 col-xs-12">
+					<span class="glyphicon glyphicon-wrench glyphicon-size" />
+					<span class="text-top">Development</span>
+				</div>
+				<div class="col-md-2 col-xs-12"></div>
+			</div>
+			<div class="row" style="min-height: 450px;">
+				<div class="col-md-2 col-xs-12 text-right"></div>
+				<div class="col-md-2 col-xs-12">
+					<h4>
+						We implement Awesome ideas into full scale Projects.
+					</h4>
+					<span class="glyphicon glyphicon-arrow-right glyphicon-color" />
+					<div style="display: inline; color: black; font-family: cursive, serif">
+						Learn more about us
+					</div>
+				</div>
+				<div class="col-md-2 col-xs-12">
+					<h5>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanhum doloremque laudantium, totam rem 
+						aperiam, eaque ipsa quae ab.
+					</h5>
+				</div>
+				<div class="col-md-2 col-xs-12">
+					<h5>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanhum doloremque laudantium, totam rem 
+						aperiam, eaque ipsa quae ab.
+					</h5>
+				</div>
+				<div class="col-md-2 col-xs-12">
+					<h5>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanhum doloremque laudantium, totam rem 
+						aperiam, eaque ipsa quae ab.
+					</h5>
+				</div>
+				<div class="col-md-2 col-xs-12"></div>
+			</div>
+			<div class="row" style="min-height: 200px;">
+				<div class="col-md-2 col-xs-12"></div>
+				<div class="col-md-2 col-xs-12">
+					<h3 style="font-size: 26pt !important; color: white; font-family: sans-serif !important;">
+						Featured work.
+					</h3>
+					<div class="white-line" style="border-radius: 0;"></div>
+				</div>
+				<div class="col-md-2 col-xs-12"></div>
+				<div class="col-md-2 col-xs-12"></div>
+				<div class="col-md-2 col-xs-12"></div>
+				<div class="col-md-2 col-xs-12"></div>
+			</div>
+			<div class="row" style="min-height: 800px;">
+				<div class="col-md-4 col-xs-4 text-center slider-arrows">
+					<div id="prev"></div>
+				</div>
+				<div class="col-md-4 col-xs-4 text-center">
+					<div class="slider">
+						<div class="slide"><img src="./hqdefault.jpg"></div>
+						<div class="slide"><img src="./hqdefault.jpg"></div>
+						<div class="slide"><img src="./hqdefault.jpg"></div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-4 text-center slider-arrows">
+					<div id="next"></div>
+				</div>
+
+			</div>
+			<div class="row" style="min-height: 500px;">
+				<div class="col-md-4 col-xs-12"></div>
+				<div class="col-md-4 col-xs-12">
+					<video id="my-video" preload="none" class="video-js" controls width="550" height="264" data-setup="{}">
+						<source type="video/mp4" src="./dance.mp4" />
+					</video>
+				</div>
+				<div class="col-md-4 col-xs-12"></div>
+			</div>
+			<div class="row" style="min-height: 500px;">
+				<div class="col-md-12 col-xs-12"></div>
+			</div>
+			<div class="row" style="min-height: 500px;">
+				<div class="col-md-12 col-xs-12"></div>
+			</div>
+			<div class="row" style="min-height: 500px;">
+				<div class="col-md-12 col-xs-12"></div>
+			</div>
+			<div class="row" style="min-height: 500px;">
+				<div class="col-md-12 col-xs-12"></div>
+			</div>
+	</div>
+	</body>
+	<script type="text/javascript">
+		$("#img").hover(function (){
+			$(".overlay").toggle(1000);
+		});
+
+		$("#my-video").hover(function () {
+			$("video").get(0).play();
+		});
+		$("#my-video").mouseout(function () {
+			$("video").get(0).pause();
+		});
+		$(document).ready(function(){
+		  	$('.slider').bxSlider({
+			  	slideWidth: 480,
+			  	nextSelector: '#next',
+			  	prevSelector: '#prev',
+			  	nextText: '<span style="color:black;" class="glyphicon glyphicon-chevron-right" />',
+	  			prevText: '<span style="color:black;" class="glyphicon glyphicon-chevron-left" />',
+			  	minSlides: 1,
+			  	maxSlides: 1,
+			  	moveSlides: 1,
+			  	slideMargin: 10
+		  	});
+		});
+	</script>
+</html>
