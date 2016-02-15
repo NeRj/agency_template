@@ -120,6 +120,18 @@
 				}
 			}
 
+			.transition-scale {
+				position: relative;
+				z-index: 2;
+				margin: 0 auto;
+				cursor: pointer;
+				transition: 3s linear;
+			}
+			.transition-scale:hover {
+				-webkit-transform: scale(2);
+				transform: scale(2);
+			}
+
 		</style>
 		<title></title>
 	</head>
@@ -127,7 +139,7 @@
 		<div class="container-fluid main-theme" style="background-image: url(./minimaze-template.jpg);">
 			<div class="row">
 				<div class="col-md-3 col-md-offset-9 col-xs-3 col-xs-offset-9">
-					<div class="hovereffect">
+					<div class="hovereffect transition-scale">
 						<img id="img" class="img-responsive img-position" src="./humburger-icon.jpg" />
 					</div>
 				</div>
@@ -237,7 +249,7 @@
 	</div>
 	</body>
 	<script type="text/javascript">
-		$("#img").hover(function (){
+		$("#img").click(function (){
 			$(".overlay").toggle(1000);
 		});
 
