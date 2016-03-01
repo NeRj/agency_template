@@ -18,8 +18,8 @@ section{
 }
 
 .row{
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .divider{
@@ -34,12 +34,12 @@ section{
 }
 
 .pre_header li{
-    margin-top: 16px;
-    margin-right: 5px;
+    margin-top: 10px;
+    margin-right: 0px;
     padding-top: 5px;
     background-color: #fff;
     border-radius: 5px;
-    width: 100px;
+    width: 80px;
     height: 30px;
     display: inline-block;
     text-align: center;
@@ -64,6 +64,11 @@ section{
     min-height: 220px;
     background-color: inherit;
     padding: 0 !important;
+}
+
+.header .contacts{
+    font-size: 32pt;
+    padding-top: 10px;
 }
 
 .logo{
@@ -103,7 +108,7 @@ section{
     background-color: #ffffff;
     margin-bottom: 0;
     border-radius: 0px;
-    height: 80px;
+    height: 40px;
     border-top: 1px #ecedf3 solid;
     font-family: 'Open Sans Bold', Open Sans, sans-serif;
     font-weight: bold;
@@ -126,21 +131,26 @@ section{
 
 .navbar .collapse{
     background-color: #ffffff;
+    z-index: 100;
 }
 
 .navbar li a, .navbar .navbar-brand {
     color: rgb(109, 110, 113) !important;
     border-left:1px solid #dedfe5;
-    height: 79px;
-    padding-top: 30px;
+    height: 39px;
+    padding-top: 5px;
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
     background-color: #fff !important;
     color: #63a8df !important;
-    height: 79px;
+    height: 39px;
     border-left:1px solid #dedfe5 !important;
     border-bottom:7px solid #63a8df !important;
+}
+
+.navbar-form {
+    border: 0;
 }
 
 .navbar_fixed{
@@ -162,17 +172,23 @@ section{
 }
 
 .arts{
-    color: #fff;
-    padding-bottom: 120px;
+    color: rgb(109, 110, 113);
+    padding-bottom: 30px;
 }
 
 .arts h1{
-    padding-top: 250px;
+    color: #bd9623;
+    padding-top: 20px;
     font-weight: bold;
 }
 
 .arts h2{
-    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.arts .row div:nth-child(2){
+    overflow: hidden;
 }
 
 .arts .overlayG{
@@ -374,18 +390,108 @@ section{
     margin: 6px 0px;
 }
 
-@media (max-width : 760px){
+
+
+@media (min-width: 768px) {
+    .row{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .pre_header li{
+        margin-top: 16px;
+        margin-right: 3px;
+        width: 80px;
+    }
+
+    .pre_header .text-right{
+        padding-top: 6px;
+        padding-bottom: 6px;
+        font-size: 24pt;
+    }
+
+    .logo{
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
     .header .contacts{
-        font-size: 32pt;
+        padding-top: 50px;
+    }
+
+    .navbar{
+        height: 80px;
+    }
+
+    .navbar .left-inner-addon{
+        width: 180px;
+        overflow: hidden;
+    }
+
+    .navbar li a, .navbar .navbar-brand {
+        width: 80px;
         padding-top: 10px;
+        height: 79px;
+    }
+
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+        height: 79px;
+    }
+
+    .arts{
+        padding-bottom: 30px;
     }
 
     .arts h1{
-        padding-top: 30px;
-        font-weight: bold;
+        color: #fff;
+        padding-top: 50px;
     }
 
     .arts h2{
-        padding-bottom: 20px;
+        color: #fff;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .pre_header li{
+        margin-right: 5px;
+        width: 100px;
+    }
+
+    .logo{
+        margin-top: 61px;
+        padding-bottom: 63px;
+    }
+
+    .header .contacts{
+        padding-top: 150px !important;
+    }
+
+    .navbar{
+        height: 80px;
+    }
+
+    .navbar .left-inner-addon{
+        width: auto;
+    }
+
+    .navbar li a, .navbar .navbar-brand {
+        width: auto;
+        padding-top: 30px;
+    }
+
+    .arts{
+        color: #fff;
+        padding-bottom: 90px;
+    }
+
+    .arts h1{
+        padding-top: 220px;
+    }
+
+    .arts h2{
+        padding-bottom: 90px;
     }
 }
